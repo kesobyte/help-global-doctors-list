@@ -5,109 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help Global Directory</title>
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Style Normalization -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <main>
-      <h1>Doctors</h1>
+      <section class="doctors-section">
+        <h1>Doctors</h1>
 
-      <ul>
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+        <div class="container">
+          <ul class="doctors-list">
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/anaesthesiology/dr-sebastian-chua.jpg"
+                    alt="Dr. Sebastian Chua"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    1 Farrer Park Station Road, #15-05 Connexion, Singapore
+                    217562
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Sebastian Chua</h2>
+                  <p class="doctors-specialization">Anaesthesiology</p>
+                  <p class="doctors-clinic">Apicare Pain Clinic</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/anaesthesiology/dr-wilson-tay.jpg"
+                    alt="Dr. Wilson Tray"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    1 Farrer Park Station Road, #15-05 Connexion, Singapore
+                    217562
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Wilson Tray</h2>
+                  <p class="doctors-specialization">Anaesthesiology</p>
+                  <p class="doctors-clinic">Apicare Pain Clinic</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/breast/dr-anthony-tang.jpg"
+                    alt="Dr. Anthony Tang"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    290 Orchard Road #16-12 Paragon Medical (Tower 1 via lift
+                    Lobby (F) Singapore 238859)
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Anthony Tang</h2>
+                  <p class="doctors-specialization">Breast Specialist</p>
+                  <p class="doctors-clinic">The Breast Clinic</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/breast/dr-chong-chee-keong.jpg"
+                    alt="Dr. Chong Chee Keong"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    Parkway East Medical Centre 319 Joo Chiat Place, #02-05,
+                    Singapore 427989
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Chong Chee Keong</h2>
+                  <p class="doctors-specialization">Breast Specialist</p>
+                  <p class="doctors-clinic">Maven Surgery</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/cardiology/dr-ang-teck-kee.jpg"
+                    alt="Dr. Ang Teck Kee"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    3 Mount Elizabeth #17-18 Mount Elizabeth Medical Centre
+                    Singapore 228510
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Ang Teck Kee</h2>
+                  <p class="doctors-specialization">Cardiologist</p>
+                  <p class="doctors-clinic">Ace Cardiology Clinic Pte Ltd</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/cardiology/dr-lee-chee-wan.jpg"
+                    alt="Dr. Lee Chee Wan"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    3 Mount Elizabeth, #07-04 Medical Centre, Singapore 228510
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Lee Chee Wan</h2>
+                  <p class="doctors-specialization">Cardiologist</p>
+                  <p class="doctors-clinic">Cardiac Centre International</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/cardiology/dr-lim-ing-han.jpg"
+                    alt="Dr. Lim Ing Han"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    3 Mount Elizabeth #04-02. Mount Elizabeth Medical Centre
+                    Singapore 228510.
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Lim Ing Han</h2>
+                  <p class="doctors-specialization">Cardiologist</p>
+                  <p class="doctors-clinic">Lim Ing Han Cardiology Clinic</p>
+                </div>
+              </a>
+            </li>
 
-        <li>
-          <img
-            src="https://cigna-assist.com/wp-content/uploads/2023/10/cat.jpg"
-            alt="Doctor's Image"
-          />
-          <div>
-            <h3>Dr. Sebastian Chua</h3>
-            <p>Anaesthesia & Perioperative Care Specialist</p>
-            <p>Singapore</p>
-          </div>
-        </li>
-      </ul>
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/cardiology/dr-lim-tai-tian.jpg"
+                    alt="Dr. Lim Tai Tian"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    Paragon #17-10 Lift Lobby F 290 Orchard Road Singapore
+                    238859
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Lim Tai Tian</h2>
+                  <p class="doctors-specialization">Cardiologist</p>
+                  <p class="doctors-clinic">Dr TT Lim Cardiology Clinic</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="doctors-list-item">
+              <a class="doctors-list-link link" href="">
+                <div class="doctors-img">
+                  <img
+                    src="./images/doctors/cardiology/dr-ooi-yau-wei.jpg"
+                    alt="Dr. Ooi Yau Wei"
+                    width="250"
+                  />
+                  <p class="doctors-img-desc">
+                    Mount Elizabeth Novena Specialist Centre, 38 Irrawaddy Road
+                    #06-39 Singapore 329563
+                  </p>
+                </div>
+                <div class="doctors-info">
+                  <h2 class="doctors-name">Dr. Ooi Yau Wei</h2>
+                  <p class="doctors-specialization">Cardiologist</p>
+                  <p class="doctors-clinic">Sozo Cardiology Clinic</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

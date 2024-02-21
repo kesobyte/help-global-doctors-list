@@ -1,16 +1,141 @@
+/* CSS Resets */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* CSS Variables */
+:root {
+  --slate: #434455;
+  --iris: #4d5ae5;
+  --white: #ffffff;
+  --navy-blue: #2e2f42;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --light-slate: #8e8f99;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --dairy: #fcfcfc;
+}
+
 li {
   margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
 }
 
 h1 {
   margin-bottom: 30px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 img {
-  width: 150px;
+  display: block;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1098px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Doctors List */
+
+.doctors-list {
+  display: flex;                
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12px;
+  row-gap: 32px;
+}
+
+.doctors-list-item {
+  flex-basis: calc((100% - 45px) / 4);
+}
+
+.doctors-list-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctors-list-link:hover,
+.doctors-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.doctors-list-link:hover .doctors-img-desc,
+.doctors-list-link:focus .doctors-img-desc {
+  transform: translateY(0%);
+}
+
+.doctors-img {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 240px;
+  border: 1px solid var(--cornflower);
+  border-bottom: none;
+}
+
+.doctors-img-desc {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+  background-color: var(--iris);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctors-info {
+  padding: 18px 12px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.doctors-name {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.doctors-specialization {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-align: left;
+  font-weight: 500;
+  text-align: center;
+}
+
+.doctors-clinic {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-align: left;
+  font-weight: 500;
+  text-align: center;
 }
